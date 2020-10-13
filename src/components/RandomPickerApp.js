@@ -6,7 +6,7 @@ import Options from './Options';
 import OptionModal from './OptionModal';
 
 // Class based Component
-export default class IndecisionApp extends React.Component {
+export default class RandomPickerApp extends React.Component {
     state = {
         options: [],
         selectedOption: undefined
@@ -78,7 +78,7 @@ export default class IndecisionApp extends React.Component {
         console.log('componentWillUnmount');
     }
     render() {
-        const subtitle = 'Put your life in the hands of a computer';
+        const subtitle = 'Get a random picked element based on your options';
         
         return (
             <div>
