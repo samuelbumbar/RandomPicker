@@ -5,8 +5,10 @@
   "author": "Samuel Bumbar",
   "license": "MIT",
   "scripts": {
+    "start": "node server/server.js",
     "serve": "live-server public/",
-    "build": "webpack",
+    "build": "webpack -p --env production",
+    "build-dev": "webpack",
     "dev-server": "webpack-dev-server"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "0.28.4",
+    "express": "4.15.4",
     "live-server": "^1.2.1",
     "node-sass": "^4.13.0",
     "normalize.css": "7.0.0",
